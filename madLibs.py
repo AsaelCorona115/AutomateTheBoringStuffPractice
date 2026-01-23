@@ -9,7 +9,7 @@
 from pathlib import Path
 from humre import *
 import re
-import os
+
 
 
 def textReplacer(fileName):
@@ -47,6 +47,9 @@ def textReplacer(fileName):
     
     #Printing the new text
     print(targetContent)
+
+
+    
     #Writing the new file under a new name
     with open("newFile.txt", "w", encoding="UTF-8") as newFile:
         newFile.write(targetContent)    
